@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevTraffic — Tráfego & Desenvolvimento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+<!-- WA FLOAT -->
+<a class="wa-float" href="https://wa.me/SEUNUMEROAQUI" target="_blank" title="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">Dev<span>Traffic</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+    <li><a href="servicos.html" data-i18n="nav_services">Serviços</a></li>
+    <li><a href="contato.html" data-i18n="nav_contact">Contato</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="pt"><span>PT</span></button>
+      <button class="lang-btn" data-lang="es"><span>ES</span></button>
+    </div>
+    <a class="nav-cta" href="https://wa.me/SEUNUMEROAQUI" target="_blank" data-i18n="nav_cta">Fale Conosco</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="servicos.html">Serviços</a>
+  <a href="contato.html">Contato</a>
+  <div class="lang-switcher" style="justify-content:center;margin:12px 0;">
+    <button class="lang-btn" data-lang="pt"><span>PT</span></button>
+    <button class="lang-btn" data-lang="es"><span>ES</span></button>
+  </div>
+  <a class="mobile-cta" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Falar no WhatsApp</a>
+</div>
+
+<!-- ══ HERO ══════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-spotlight"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-center">
+    <div class="hero-badge" data-i18n="hero_tag">
+      <span class="badge-pulse"></span>
+      Tráfego + Desenvolvimento
+    </div>
+    <h1 class="hero-title" data-i18n="hero_headline">
+      Escale seu negócio<br>com tráfego e<br><span class="text-red">tecnologia real.</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero_sub">
+      Combinamos <strong>gestão estratégica de tráfego pago</strong> e <strong>desenvolvimento web de alta performance</strong> para empresas que querem resultados mensuráveis no digital.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Começar Agora →</a>
+      <a class="btn-ghost" href="servicos.html">Ver Serviços</a>
+    </div>
+  </div>
+
+  <!-- floating cards -->
+  <div class="hero-float-cards">
+    <div class="float-card fc-1 reveal-hero">
+      <div class="fc-label">ROAS Médio</div>
+      <div class="fc-value">8.4×</div>
+      <div class="fc-bar"><div class="fc-fill" style="width:84%"></div></div>
+    </div>
+    <div class="float-card fc-2 reveal-hero">
+      <div class="fc-label">Leads / mês</div>
+      <div class="fc-value">+2.847</div>
+      <div class="fc-badge">↑ 32%</div>
+    </div>
+    <div class="float-card fc-3 reveal-hero">
+      <div class="fc-label">Taxa de conversão</div>
+      <div class="fc-value">4.7%</div>
+      <div class="fc-badge">Acima da média</div>
+    </div>
+    <div class="float-card fc-4 reveal-hero">
+      <div class="fc-label">Projetos entregues</div>
+      <div class="fc-value">150+</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST STRIP ════════════════════════════ -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6m4 0h4m4 0v-8a2 2 0 00-2-2h-2a2 2 0 00-2 2v8m4 0H9"/></svg>
+    Tráfego Pago
+  </div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+    Desenvolvimento Web
+  </div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+    Lojas Virtuais
+  </div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+    Sistemas & CRM
+  </div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Analytics
+  </div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Automação
+  </div>
+</div>
+
+<!-- ══ METRICS ════════════════════════════════ -->
+<section id="metrics">
+  <p class="metrics-label">Números que falam por si</p>
+  <div class="metrics-grid">
+    <div class="metric-card reveal">
+      <div class="metric-num">150<span>+</span></div>
+      <div class="metric-desc">Projetos Entregues</div>
+    </div>
+    <div class="metric-card reveal">
+      <div class="metric-num">R$2M<span>+</span></div>
+      <div class="metric-desc">Em ads gerenciados</div>
+    </div>
+    <div class="metric-card reveal">
+      <div class="metric-num">98<span>%</span></div>
+      <div class="metric-desc">Clientes satisfeitos</div>
+    </div>
+    <div class="metric-card reveal">
+      <div class="metric-num">5<span>+</span></div>
+      <div class="metric-desc">Anos de mercado</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRODUCT OVERVIEW ═══════════════════════ -->
+<section id="product">
+  <div class="section-eyebrow">O que entregamos</div>
+  <h2 class="section-heading">Tudo que seu negócio<br>precisa para escalar.</h2>
+  <p class="section-sub">Não vendemos apenas cliques ou código. Entregamos a combinação estratégica certa para cada etapa do seu crescimento.</p>
+
+  <div class="product-grid">
+
+    <div class="product-card reveal">
+      <div class="pc-top">
+        <div class="pc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6m4 0h4m4 0v-8a2 2 0 00-2-2h-2a2 2 0 00-2 2v8m4 0H9"/></svg>
+        </div>
+        <span class="pc-num">01</span>
+      </div>
+      <h3 class="pc-title">Gestão de Tráfego Pago</h3>
+      <p class="pc-desc">Google Ads, Meta Ads e TikTok Ads gerenciados com foco em performance real. Segmentação precisa, otimização contínua e relatórios semanais.</p>
+      <div class="pc-tags">
+        <span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>Retargeting</span>
+      </div>
+      <a class="pc-link" href="servicos.html">Ver serviço <span>→</span></a>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="pc-top">
+        <div class="pc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+        </div>
+        <span class="pc-num">02</span>
+      </div>
+      <h3 class="pc-title">Desenvolvimento Web</h3>
+      <p class="pc-desc">Sites institucionais, landing pages e portais com foco em velocidade, SEO técnico e experiência do usuário orientada à conversão.</p>
+      <div class="pc-tags">
+        <span>Landing Pages</span><span>SEO</span><span>Performance 90+</span><span>React</span>
+      </div>
+      <a class="pc-link" href="servicos.html">Ver serviço <span>→</span></a>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="pc-top">
+        <div class="pc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+        </div>
+        <span class="pc-num">03</span>
+      </div>
+      <h3 class="pc-title">Lojas Virtuais</h3>
+      <p class="pc-desc">E-commerce completo com integração de pagamentos, ERP, automação de marketing e conexão com os principais marketplaces do Brasil.</p>
+      <div class="pc-tags">
+        <span>Shopify</span><span>WooCommerce</span><span>Pix & Cartão</span><span>Mercado Livre</span>
+      </div>
+      <a class="pc-link" href="servicos.html">Ver serviço <span>→</span></a>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="pc-top">
+        <div class="pc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><circle cx="17.5" cy="17.5" r="3.5"/><path d="M17.5 16v1.5l1 1"/></svg>
+        </div>
+        <span class="pc-num">04</span>
+      </div>
+      <h3 class="pc-title">Sistemas & Automação</h3>
+      <p class="pc-desc">CRMs, dashboards e automações personalizadas para empresas que precisam de soluções digitais sob medida, além das ferramentas genéricas.</p>
+      <div class="pc-tags">
+        <span>CRM</span><span>Dashboards</span><span>AWS</span><span>APIs</span>
+      </div>
+      <a class="pc-link" href="servicos.html">Ver serviço <span>→</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ INTEGRATIONS ═══════════════════════════ -->
+<section id="integrations">
+  <div class="section-eyebrow">Plataformas</div>
+  <h2 class="section-heading">Integrado com as<br>ferramentas que você usa.</h2>
+  <p class="section-sub">Trabalhamos com o ecossistema que você já conhece e ampliamos seus resultados com as melhores integrações do mercado.</p>
+
+  <div class="integrations-hub">
+    <div class="hub-center">
+      <div class="hub-logo">DT</div>
+    </div>
+    <div class="hub-orbit">
+      <div class="hub-item hi-1"><span>Google</span></div>
+      <div class="hub-item hi-2"><span>Meta</span></div>
+      <div class="hub-item hi-3"><span>TikTok</span></div>
+      <div class="hub-item hi-4"><span>Shopify</span></div>
+      <div class="hub-item hi-5"><span>AWS</span></div>
+      <div class="hub-item hi-6"><span>Analytics</span></div>
+      <div class="hub-item hi-7"><span>Notion</span></div>
+      <div class="hub-item hi-8"><span>WhatsApp</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DIFFERENTIALS TABLE ════════════════════ -->
+<section id="diff">
+  <div class="section-eyebrow">Diferenciais</div>
+  <h2 class="section-heading">Por que a DevTraffic?</h2>
+  <p class="section-sub">A maioria das agências escolhe um lado. Nós dominamos os dois — e fazemos eles funcionarem juntos.</p>
+
+  <div class="diff-grid">
+    <div class="diff-col diff-others">
+      <div class="diff-col-header">Outras agências</div>
+      <div class="diff-row no">Só tráfego ou só dev</div>
+      <div class="diff-row no">Relatórios mensais superficiais</div>
+      <div class="diff-row no">Equipe rotativa sem foco</div>
+      <div class="diff-row no">Decisões por achismo</div>
+      <div class="diff-row no">Contrato longo de fidelidade</div>
+      <div class="diff-row no">Suporte via ticket demorado</div>
+    </div>
+    <div class="diff-col diff-us">
+      <div class="diff-col-header diff-us-header"><span>✦</span> DevTraffic</div>
+      <div class="diff-row yes">Tráfego + dev na mesma equipe</div>
+      <div class="diff-row yes">Relatórios semanais detalhados</div>
+      <div class="diff-row yes">Profissional dedicado ao projeto</div>
+      <div class="diff-row yes">Estratégia 100% baseada em dados</div>
+      <div class="diff-row yes">Sem contrato de fidelidade longo</div>
+      <div class="diff-row yes">Suporte direto no WhatsApp</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ═══════════════════════════ -->
+<section id="how">
+  <div class="section-eyebrow">Como funciona</div>
+  <h2 class="section-heading">Comece a crescer<br>em 3 passos.</h2>
+
+  <div class="steps-grid">
+    <div class="step-card reveal">
+      <div class="step-num">01</div>
+      <h3 class="step-title">Diagnóstico gratuito</h3>
+      <p class="step-desc">Analisamos sua presença digital atual, campanhas e site. Identificamos gargalos e oportunidades reais de crescimento — sem custo.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step-card reveal">
+      <div class="step-num">02</div>
+      <h3 class="step-title">Estratégia personalizada</h3>
+      <p class="step-desc">Montamos um plano de ação com metas claras, canais definidos e cronograma de execução baseado nos seus objetivos reais.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step-card reveal">
+      <div class="step-num">03</div>
+      <h3 class="step-title">Execução e escala</h3>
+      <p class="step-desc">Implementamos, monitoramos e otimizamos continuamente. Você acompanha os resultados em tempo real e escala com segurança.</p>
+    </div>
+  </div>
+
+  <div class="how-cta reveal">
+    <a class="btn-primary" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Quero meu diagnóstico gratuito</a>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ═══════════════════════════ -->
+<section id="testimonials">
+  <div class="section-eyebrow">Depoimentos</div>
+  <h2 class="section-heading">O que nossos clientes<br>estão dizendo.</h2>
+
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"A DevTraffic triplicou nosso faturamento em 4 meses. Nunca tivemos um retorno tão consistente com campanhas pagas antes."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">VM</div>
+        <div>
+          <div class="testi-name">Valdir Aparecido</div>
+          <div class="testi-role">CEO — Loja Virtual XYZ</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Entregaram nosso e-commerce completo em 3 semanas e já integrado com a campanha de lançamento. Resultado imediato."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">JS</div>
+        <div>
+          <div class="testi-name">Janaina Soares</div>
+          <div class="testi-role">Fundadora — Marca de Moda</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"O diferencial é ter tráfego e dev na mesma equipe. A sincronia entre campanhas e site fez toda a diferença no custo por lead."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">RT</div>
+        <div>
+          <div class="testi-name">Rafael Torres</div>
+          <div class="testi-role">Diretor de Marketing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════ -->
+<section id="faq">
+  <div class="section-eyebrow">FAQ</div>
+  <h2 class="section-heading">Perguntas frequentes.</h2>
+
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Vocês atendem qualquer tipo de negócio?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Sim. Atendemos desde startups em fase inicial até empresas consolidadas. Nosso processo começa com um diagnóstico honesto — se não fizer sentido para o seu momento, vamos dizer claramente.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Qual é o investimento mínimo em tráfego pago?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Recomendamos um budget mínimo de anúncios para garantir volume de dados suficiente para otimização. Esse valor varia por segmento e objetivo. Na consultoria gratuita, indicamos o ideal para o seu caso.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Em quanto tempo vejo resultados?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Os primeiros indicadores aparecem nas primeiras semanas. Resultados consistentes e escaláveis geralmente se consolidam entre 60 e 90 dias, dependendo do mercado e da maturidade digital do negócio.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Preciso ter um site para contratar gestão de tráfego?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Não obrigatoriamente, mas altamente recomendado. Campanhas que apontam para um site otimizado convertem muito mais. Podemos construir a landing page e gerenciar o tráfego juntos — integrado e estratégico.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Existe fidelidade contratual?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Não trabalhamos com contratos longos de fidelidade. Acreditamos que o cliente deve continuar por resultado, não por obrigação contratual. Nosso aviso prévio é de 30 dias.</p>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Como funciona o suporte?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        <p>Suporte direto via WhatsApp com tempo de resposta rápido. Sem ticket, sem fila. Você fala diretamente com quem está trabalhando no seu projeto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA FINAL ══════════════════════════════ -->
+<section id="cta-final">
+  <div class="cta-glow"></div>
+  <div class="cta-noise"></div>
+  <div class="section-eyebrow" style="position:relative">Próximo passo</div>
+  <h2 class="cta-heading">Pronto para<br><span>escalar?</span></h2>
+  <p class="cta-sub">Fale com nosso time e receba um diagnóstico gratuito da sua presença digital. Sem compromisso, sem enrolação.</p>
+  <div class="cta-actions reveal">
+    <a class="btn-primary btn-lg" href="https://wa.me/SEUNUMEROAQUI" target="_blank">▶ Falar no WhatsApp</a>
+    <a class="btn-ghost btn-lg" href="contato.html">Formulário de contato</a>
+  </div>
+  <div class="cta-watermark">DEVTRAFFIC</div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="nav-logo footer-logo" href="index.html">Dev<span>Traffic</span></a>
+      <p class="footer-tagline">Tráfego pago e desenvolvimento web para empresas que querem crescer no digital com estratégia e tecnologia.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg>
+        </a>
+        <a href="https://wa.me/SEUNUMEROAQUI" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="contato.html#sobre">Sobre Nós</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="servicos.html">Tráfego Pago</a></li>
+        <li><a href="servicos.html">Desenvolvimento Web</a></li>
+        <li><a href="servicos.html">Lojas Virtuais</a></li>
+        <li><a href="servicos.html">Sistemas & CRM</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/SEUNUMEROAQUI">WhatsApp</a></li>
+        <li><a href="mailto:contato@devtraffic.com.br">E-mail</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 <strong>DevTraffic</strong>. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
